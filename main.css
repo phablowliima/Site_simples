@@ -8,17 +8,6 @@ body {
     background: var(--bg);
 }
 
-ul {
-    font-family: helvetica;
-    }
-
-li {
-    list-style: circle;
-    }
-.list {
-    list-style: square;
-    }
-
 :root {
     --green: #00FF00;
     --white: #FFFFFF;
