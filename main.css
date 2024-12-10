@@ -6,6 +6,7 @@
 body {
     font-family: monospace;
     background: var(--bg);
+    transition: background 0.5s ease, color 0.5s ease;
 }
 
 ul {
@@ -35,17 +36,32 @@ li {
     border: none;
     color: var(--btnFontColor);
     background-color: var(--btnBg);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
 }
 
 .light-theme {
     --bg: var(--green);
     --fontColor: var(--black);
     --btnBg: var(--black);
-    --btnFontColor: var(--white)
+    --btnFontColor: var(--white);
     }
 .dark-theme {
     --bg: var(--black);
     --fontColor: var(--green);
     --btnBg: var(--white);
-    --btnFontColor: var(--black)
+    --btnFontColor: var(--black);
+    }
+
+    @medria (max-width: 600px) {
+        .btn {
+            top:10px;
+            left: 10px;
+            height: 40px;
+            width: 40px;
+        }
+
+        body {
+            font-size: 14px;
+        }
     }
